@@ -11,6 +11,7 @@ import { OurPeopleComponent } from './pages/our-people/our-people.component';
 import { NewsEventsComponent } from './pages/news-events/news-events.component';
 import { ShortcodesComponent } from './pages/shortcodes/shortcodes.component';
 import { LocationComponent } from './pages/location/location.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LocationComponent } from './pages/location/location.component';
     OurPeopleComponent,
     NewsEventsComponent,
     ShortcodesComponent,
-    LocationComponent
+    LocationComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

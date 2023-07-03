@@ -9,11 +9,12 @@ import { OurPracticesComponent } from 'src/app/pages/our-practices/our-practices
 import { ShortcodesComponent } from 'src/app/pages/shortcodes/shortcodes.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'our-firm', component: OurFirmComponent },
   { path: 'our-practices', component: OurPracticesComponent },
   { path: 'our-people', component: OurPeopleComponent },
-  { path: 'new-events', component: NewsEventsComponent },
+  { path: 'news-events', component: NewsEventsComponent },
   { path: 'shortcodes', component: ShortcodesComponent },
   { path: 'location', component: LocationComponent }
 ];
